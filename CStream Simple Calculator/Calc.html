@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Simple Calculator Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Calc style.css">
+<head>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Simple Calculator</h1><br>
+            <div class="input">
+                <label for="textBox1">Enter The First Number:</label><br>
+                <input type="text" id="num1" placeholder="1st number" autocomplete="on" minlength="3" maxlength="50" aria-label="Text box to enter the first number">
+            </div><br>
+            <div class="input">
+                <label for="textBox1">Enter The Second Number:</label><br>
+                <input type="text" id="num2" placeholder="2nd number" autocomplete="on" minlength="3" maxlength="50" aria-label="Text box to enter the Second number">
+            </div><br>
+            <div>
+                <p id="result"></p>
+            </div><br>
+            <div class="Btn-container">
+                <button id="myButton" type="submit" aria-label="Addition Button" onclick="add()">ADD</button>
+                <button id="myButton" type="submit" aria-label="Subtraction Button" onclick="sub()">SUB</button>
+                <button id="myButton" type="submit" aria-label="Multiplication Button" onclick="mul()">MUL</button>
+                <button id="myButton" type="submit" aria-label="Division Button" onclick="div()">DIV</button>
+                <button id="myButton" type="submit" aria-label="Reset Button" onclick="clr()">CLR</button>
+            </div><br>
+        </div>
+    </div>
+    <script src="operation.js"></script>
+</body>
+</html>
